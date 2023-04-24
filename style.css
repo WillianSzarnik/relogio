@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+
+* { # /* Essa parte tira toda a formatação que pdoe ter na pagina por padrao */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh; /*Altura tela inteira  */
+    background: linear-gradient(120deg, #ffe53bd8, #ff2525da); /* Gradiente, !!!Lembrar da extensao que deixa dark kk */
+    display: flex; /* Alinha para */
+    align-items: center; /* Centraliza */
+    justify-content: center;
+}
+
+.relogio{ /* Quadrado */
+    display: flex; /*deixa os elementos para ficar alinhados  */
+    align-items: center;
+    justify-content: space-around; /* Espaço entre os elementos */ 
+    height: 200px;
+    width: 550px;
+    background: transparent; /*Background transparente */
+    border-radius: 3px; /* Borda redendoda  */
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5); /* Sombra */
+
+}
+
+.relogio div{  /*Div central Relogio */ 
+    height: 170px; /* Altura */
+    width: 150px; /* Largura */
+    display: flex;
+    flex-direction:column; /*Elementos um debaixo do outro  */
+    align-items: center; 
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span { /* Os Spans da Div relogio */
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.relogio span.tempo { /* Especificamente modifica somente itens com a classe tempo dentro da div dentro do span */
+    font-size: 10px;
+}
